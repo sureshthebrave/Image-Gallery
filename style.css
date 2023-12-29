@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: orangered;
+    margin-top: 20px;
+}
+h1:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    transition: 0.5s ease;
+}
+
+.product-small-img img{
+    height: 80px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.55;
+}
+
+.product-small-img img:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+.product-small-img{
+    float: left;
+}
+.product{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.img-container img{
+    height: 440px;
+}
+
+
+.img-container {
+    float: right;
+    padding: 10px;
+}

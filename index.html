@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>IMAGE GALLERY</h1>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="images/img-1.webp" alt="" onclick="imgfunction(this)">
+            <img src="images/img-2.webp" alt="" onclick="imgfunction(this)">
+            <img src="images/img-3.webp" alt="" onclick="imgfunction(this)">
+            <img src="images/img-4.webp" alt="" onclick="imgfunction(this)">
+            <img src="images/img-5.webp" alt="" onclick="imgfunction(this)">
+        </div>
+
+        <div class="img-container">
+            <img src="images/img-1.webp" alt="" id="big-img">
+        </div>
+    </div>
+
+    <script> 
+        function imgfunction(smallimg){
+            let fullimg = document.getElementById('big-img');
+            fullimg.src = smallimg.src
+        }
+    </script>
+</body>
+</html>
